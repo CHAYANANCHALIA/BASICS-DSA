@@ -1,0 +1,16 @@
+public class BoilerPlate{
+    public static void main(String args[]){
+        System.out.println("Hello");
+        System.out.print("Hello\n");
+        System.out.print("Hell\nno");
+        System.out.print("\nHello");
+        System.out.print("Hello");
+    }
+}
+
+-----------------------------------------------------------------
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
