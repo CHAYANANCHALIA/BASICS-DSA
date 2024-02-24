@@ -1,0 +1,11 @@
+import java.util.*;
+public class input{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+       String Name = sc.next();              /*it is taking input only once,i dont know which one either*/
+       System.out.print(Name);
+        String FullName=sc.nextLine();
+        System.out.print(FullName);
+       // System.out.print(FullName"B");//not possible
+        }
+}
