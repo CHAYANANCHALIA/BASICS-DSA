@@ -1,0 +1,28 @@
+import java.util.*;
+public class revision{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+       /* float a = 27.27;
+           System.out.print(a);
+           incompatible types: possible lossy conversion from double to float*/
+        float a = 27.27f;
+        System.out.println(a);
+        float b = (float)27.27;
+        System.out.println(b);
+        float c = sc.nextFloat();/*but the error in the start isnt happening when i give 27.27 here;i understood;by default it thinks 27.27 is double but when it asks for input it knows beacuse i have mentioned float input*/
+        System.out.println(c);
+        int d = (int)c;
+        System.out.println(d);
+        char e = 'e';
+        System.out.println(e);
+        int f = (int)e;
+        System.out.println(f);
+        //int g = 101;
+        char h = (char)c;
+        System.out.println(h);
+        
+        
+
+
+    }
+}
