@@ -1,0 +1,20 @@
+import java.util.*;
+public class UNARYSPACES{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+    System.out.println("you gave" +  (a) + "as input");//no space
+    System.out.println("\n\nyou gave " +  (a) + " as input ");/*with space*/
+    int b = a;
+    System.out.println("b is " + b);
+    //int b = ++a;error no need to write int
+    b = ++a;
+    System.out.println("b is " + b);
+    System.out.println("a is " + a);
+    b = a ++;
+    System.out.println("b is " + b);
+    System.out.println("a is " + a);
+    
+    
+    }
+}
