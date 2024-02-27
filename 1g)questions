@@ -1,0 +1,38 @@
+import java.util.*;
+public class VariablesAndOperatorsQuestions{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        float a = sc.nextFloat();
+        float b = sc.nextFloat();
+        float c = sc.nextFloat();
+        System.out.println("The Average of the 3 numbers is "+(a+b+c)/3);
+        System.out.println("Now we will be calculating the area of the square whose length you will provide");
+        float Side = sc.nextFloat();
+        System.out.println("AREA of the square is " + Side*Side); 
+        System.out.println("Now lets calculate the billing amount");
+        System.out.println("What is the cost of the PEN");
+        int Pen = sc.nextInt();
+        System.out.println("What is the cost of the PENCIL");
+        int Pencil = sc.nextInt();
+        System.out.println("What is the cost of the ERASER");
+        int Eraser = sc.nextInt();
+        int Total = Pen+Pencil+Eraser;
+        System.out.println("The Total Cost of the Items you purchased is" + Total);
+        float gst = 0.18f*Total;/* without f it will  fail
+        You could also [float gst =(float)0.18*Total]*/
+        // total += total * 0.18 contri Rishab
+        System.out.println("The Total Cost of the Items you purchased Including GST is " + (Total+gst));
+        /*
+        No, the statement int $ = 24; will not produce any errors in Java.
+
+In Java, variable names can consist of letters, digits, underscores, and dollar signs. They must begin with a letter, underscore, or dollar sign. Therefore, int $ = 24; is a valid declaration in Java, where $ is the name of the variable and it is assigned the value 24.
+
+
+
+
+
+        */
+        
+        
+    }
+}
