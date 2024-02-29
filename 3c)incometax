@@ -1,0 +1,27 @@
+import java.util.*;
+public class Incometax{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your income details\n");
+        float Income = sc.nextInt();
+        float Tax;
+        if(Income<500000){  //i want to give input as 5,00,000
+            Tax = 0;
+             System.out.println("Tax levied will be none");
+        }
+        else if(500000<=Income && Income<=1000000){//500000<=Income<=1000000 wrong
+            Tax = 20;
+             System.out.println("Tax levied will be " + Tax + "%");
+             Tax = 0.2f * Income;
+             Income-=Tax;
+              System.out.println("Your net income is " + Income);
+        }
+        else {
+            Tax = 30;
+            System.out.println("Tax levied will be " + Tax + "%");
+             Tax = 0.3f * Income;
+             Income-=Tax;
+              System.out.println("Your net income is " + Income);
+        }
+    }
+}
