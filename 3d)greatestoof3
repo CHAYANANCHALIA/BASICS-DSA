@@ -1,0 +1,22 @@
+import java.util.*;
+public class Greatestof3{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        if (a>b && a>c){
+             System.out.print(a + " a is greatest of all numbers");
+        }
+        else if(b>c){
+             System.out.print(b + "b is greatest of all numbers");/*A.S said to put a,b,c in double quotes  helps to identify which condition is being executed*/
+        }
+        else{
+             System.out.print(c + "c is greatest of all numbers");
+        }
+    }
+}
+
+
+
+/*TAKE FLOAT No.s,what if the values are equal(my code works idk why),arrange them in ascending order,*/
