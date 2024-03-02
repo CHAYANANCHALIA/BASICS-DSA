@@ -1,0 +1,50 @@
+import java.util.*;                                                                                                       
+public class Ternary{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int marks = sc.nextInt();
+        String result = marks>=30?System.out.print("pass"): System.out.print("fail");
+    }
+    
+} 
+================================================================================================
+/*
+In Java, the ternary operator (condition ? expression1 : expression2) is a shorthand way to write an if-else statement. It evaluates the condition, and if the condition is true, it returns expression1; otherwise, it returns expression2.
+
+The requirement that both expressions (expression1 and expression2) must have the same data type or a compatible relationship means that Java expects both expressions to be of compatible types such that they can be assigned to the same variable or used in the same context without causing type conflicts.
+
+For example:
+
+Both expressions can be primitive types (like int, double, boolean, etc.).
+Both expressions can be objects of the same class or subclass (polymorphism).
+Both expressions can be null (if the context allows it).
+If the expressions have different data types and there's no implicit conversion between them, the compiler will raise an error.
+
+In your original code, the expressions were System.out.print("pass") and System.out.print("fail"). The System.out.print() method in Java returns void (which means it doesn't return a value), and you can't assign void to a String variable. That's why your code was causing a compilation error.
+
+---------------------------------------------------------------------
+Your code has a compilation error because you are trying to assign the result of System.out.print() to a String variable, which is not possible. The ternary operator (? :) requires both its second and third operands to have the same data type or a compatible relationship.
+
+In Java, System.out.print() returns void, which means it doesn't return any value, so you can't assign it to a String variable.
+
+Here's the corrected version of your code:
+import java.util.*;
+
+public class Ternary {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int marks = sc.nextInt();
+        String result = marks >= 30 ? "pass" : "fail";
+        System.out.println(result);
+    }
+}
+In this corrected version, I've removed the System.out.print() statements from the ternary operator and assigned the result to the String variable result. Then, I printed out the result using System.out.println() after the ternary operation.
+
+
+
+
+
+
+
+
+*/
