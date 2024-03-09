@@ -15,3 +15,19 @@ class Pattern1 {
         
     }
 }
+===========================================================
+import java.util.*;
+class Pattern1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);  /*i was just playing and the output is the same as the above code*/
+        int n = sc.nextInt();
+        for(int line = 5;line>=n;line--){
+            for(int star = 5;star>=line;star--){
+                System.out.print('*');
+            }
+             System.out.println();
+        }
+
+        
+    }
+}
