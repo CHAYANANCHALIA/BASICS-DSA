@@ -1,0 +1,34 @@
+import java.util.*;
+public class idk{
+    public static void printsum(){
+        Scanner sc = new Scanner(System.in);
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        int sum1 = c+d;
+        System.out.print(sum1);
+    }
+    public static int calculatesum(int e,int f){
+        
+        
+        int sum2 = e+f;
+        return sum2;
+    }
+    public static void main(String args[]){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int sum = a+b;
+        System.out.print(sum);//////////
+        
+        
+        printsum();///////
+        
+        
+        int e = sc.nextInt();
+        int f = sc.nextInt();
+        int sum2 = calculatesum(e,f);/*sum2 in main() is diff. from the one one in calculatsum()...scope*/
+        System.out.print(sum2);/////////
+    }
+}
