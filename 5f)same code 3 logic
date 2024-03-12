@@ -1,0 +1,26 @@
+import java.util.*;
+public class idk{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int floors = sc.nextInt();
+        for (int i = 1;i<=floors;i++){///////////
+            for(int j = 0;i+j<=floors;j++){
+                 System.out.print("*");
+            }
+           System.out.println();
+        }//////////////////////////////////
+         for (int i = 1;i<=floors;i++){////////////////////
+            for(int j = 1;i+j<=floors+1;j++){
+                 System.out.print("*");
+            }
+           System.out.println();
+        }/////////////////////////////////////////
+         for (int i = 1;i<=floors;i++){/////////////////////
+            for(int j = i;j<=floors;j++){
+                 System.out.print("*");
+            }
+           System.out.println();///////////////////////
+        }
+          
+    }
+}
