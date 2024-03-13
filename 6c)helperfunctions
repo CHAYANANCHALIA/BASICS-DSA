@@ -1,0 +1,42 @@
+import java.util.*;
+public class cbv{
+    
+    ///////////////////
+    public static int Factorial(int a){
+        int factorial = 1;
+        for(int i = 1;i<=a;i++){
+            factorial = factorial*i;
+        }
+        return factorial;
+    }
+    //////////////////
+    
+    ///////////////////
+    public static int Bincoeff(int n,int r){
+        int nf = Factorial(n);
+        int rf = Factorial(r);
+        int nminusr = Factorial(n-r);
+        int nmr = nminusr;
+        int bicoeff = nf/(rf*nmr);
+        
+        return bicoeff;
+    }
+    ///////////////////
+    
+    ////////////////////
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+         System.out.print("Factorial for "+ a + " is " +Factorial(a));/*directly called the function in print statement*/
+         ////////////////
+         
+         //binomal coefficient//
+         int n = sc.nextInt();
+         int r = sc.nextInt();
+         int bicoeff = Bincoeff(n,r);
+         System.out.print("Binomial coeff for " +n+ " & "+r+" is " +bicoeff);
+         
+         
+         
+    }
+}
