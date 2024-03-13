@@ -1,0 +1,25 @@
+import java.util.*;
+public class cbv{
+    public static void Swapping(int a, int b){
+        
+        int temp = a;
+        a = b;
+        b = temp;
+
+         System.out.println("Swapping function says a is " + a);
+         System.out.println("Swapping function says b is " + b);
+        
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        Swapping(a,b);
+        System.out.println("Main function says a is " + a);
+        System.out.println("Main function says b is " + b);
+        
+    }
+}
+
+/*values in variables being swapped in swapping function doesn't change the values actually stored in them becoz java doesnt actually send the variables it just sends a copy of those variables
+*/
