@@ -1,0 +1,29 @@
+import java.util.*;
+public class verify{
+    
+    ////////////////////////////
+    public static int Sum(int a,int b){
+        return a+b;/*directly returned a+b without storing them in some c*/
+    }
+    ////////////////////////////
+    
+    
+    /////////////////////////////
+     public static float Sum(float a,float b){
+        return a+b;/*directly returned a+b without storing them in some c*/
+    }
+    ////////////////////////////
+    ////////////////////////////////////////
+    public static void main(String args[]){
+       // Scanner sc = new Scanner(System.in); no need here
+        
+        
+     System.out.println(Sum (3,5));/*kind of didn't need to declare or store 3,5 in some variable*/
+     System.out.println(Sum (3.2f,5.24f));
+     
+     
+    /////////////////////////////////////////    
+    }
+}
+
+/*int sum(int a , int b) & float sum(int a,int b) is not func. overloading becoz even if return type is diff. it doesnt matter coz for a func to be overloaded the kind of or the no. of parameters need to be different*/
