@@ -1,0 +1,21 @@
+import java.util.*;
+public class DeciToBin{
+    public static void dTob(int decimal){
+        int lastdigit=0;
+        int pow = 0;
+        int bin = 0;
+        while(decimal>0){
+            lastdigit = decimal%2;
+            decimal = decimal/2;
+            bin = bin +( lastdigit*(int)Math.pow(10,pow));/*you need to typecast when you use Math.pow()*/
+            pow++;
+        }
+         System.out.print(bin);
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int decimal = sc.nextInt();
+        dTob(decimal);
+    }
+    
+}
