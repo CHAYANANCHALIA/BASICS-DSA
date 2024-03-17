@@ -1,0 +1,16 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void Scope (int a){
+        int s = 200;
+         System.out.println(s);
+          System.out.print(a);
+    }
+    public static void main(String[] args) {
+        int a = 10;
+        System.out.println(a);
+        /*System.out.print(s);wont work coz variables declared in a function work only in that function,for a variable of 1func. to be used in another it needs to be passed as argument*/
+        Scope(a);
+    }
+}
