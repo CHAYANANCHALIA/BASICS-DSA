@@ -1,0 +1,15 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Blockscope{
+    public static void main(String[] args) {
+    
+    
+    {int a =1;
+     System.out.println(a);
+    }
+        
+        //  System.out.print(a);will throw error becoz a has been 
+        //declared inside curly braces
+    }
+}
