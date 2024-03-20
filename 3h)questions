@@ -14,3 +14,37 @@ public class csq{
  
     
 }
+============================================================
+//conditional statement questions
+import java.util.*;
+public class csq{ 
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        double temp = sc.nextDouble();
+        if(temp>100){
+             System.out.println("You have fever");/*it is import to keep "ln" or the switch case wont run becoz i am taking input*/
+             
+             int day = sc.nextInt();
+             switch(day){
+                 case 1: System.out.print("IT IS MONDAY SO YOU WILL HAVE TO MISS SCHOOL");
+                       break;
+                case 2: System.out.print("IT IS TUESDAY SO YOU WILL HAVE TO MISS SCHOOL");
+                        break;
+                case 3: System.out.print("IT IS WEDNESDAY SO YOU WILL HAVE TO MISS SCHOOL");break;
+                case 4: System.out.print("IT IS THURSDAY SO YOU WILL HAVE TO MISS SCHOOL");break;
+                case 5: System.out.print("IT IS FRIDAY SO YOU WILL HAVE TO MISS SCHOOL");break;
+                case 6: System.out.print("IT IS SATURDAY SO YOU WON'T HAVE TO MISS SCHOOL");break;
+                case 7: System.out.print("IT IS SUNDAY SO YOU WON'T HAVE TO MISS SCHOOL");break;
+             }
+        }
+        else{
+             System.out.print("you don't have fever");
+        }
+    
+        
+        
+        
+    }
+ 
+    
+}
