@@ -19,3 +19,26 @@ public class SumOfOddandEven{
         
     }
 }
+===================================================================================
+import java.util.*;
+public class soesoo{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int soe = 0;
+        int soo = 0;
+         int choice ;
+        do{
+            int input = sc.nextInt();
+            if (input%2==0){
+                soe += input;
+                
+            }else{
+                soo+=input;
+            }
+            System.out.println("sum of even numbers is "+soe);
+          System.out.println("sum of odd numbers is "+soo);
+         choice = sc.nextInt();
+        }while(choice==1);
+        
+    }
+}
