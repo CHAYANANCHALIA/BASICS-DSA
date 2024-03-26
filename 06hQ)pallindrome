@@ -1,0 +1,24 @@
+import java.util.*;
+public class Pallindrome{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        int temp = number;//for comparision
+        int r_number = 0;
+        int digit = 0;
+        for (int i = number;i>0;i=i/10){
+            digit = number%10;
+            r_number= r_number*10+digit;
+            number=number/10;
+            
+           
+        }
+         System.out.println(r_number);
+        if(r_number==temp){
+             System.out.println("pallindrome");
+        }else{
+             System.out.println("not a pallindrome");
+        }
+        
+    }
+}
