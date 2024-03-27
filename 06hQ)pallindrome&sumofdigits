@@ -22,3 +22,17 @@ public class Pallindrome{
         
     }
 }
+=================================================================================================
+import java.util.*;
+public class SumOfDigits{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int sum = 0;
+        for(int i = a;i!=0;i=i/10){
+            int extracted_digit = a%10;
+            a=a/10;
+            sum = sum+extracted_digit;
+        } System.out.print(sum);
+    }
+}
