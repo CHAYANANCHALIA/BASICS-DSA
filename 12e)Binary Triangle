@@ -39,3 +39,27 @@ public class BinaryTriangle{
         B_T(rows);
     }
 }
+============================================================the above codes are wrong but useful nonetheless=========================
+import java.util.*;
+public class BinaryTriangle{
+    public static void B_T(int rows){
+        for(int i = 1 ;i<=rows;i++){
+            int sd = 1;
+            if(i%2==0){
+                sd=0;
+            }else sd =1;
+            for(int j = 1;j<=i;j++){
+                System.out.print(sd);
+                 sd = (sd == 0) ? 1 : 0;
+            }
+        System.out.println();
+       /* sd = (sd == 0) ? 1 : 0; this isn't needed,this infact spoils the code*/
+        }
+    }
+        
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int rows = sc.nextInt();
+        B_T(rows);
+    }
+}
