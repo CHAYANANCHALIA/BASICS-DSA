@@ -63,3 +63,17 @@ public class BinaryTriangle{
         B_T(rows);
     }
 }
+=====================================================================================================
+public class Main {
+    public static void main(String[] args) {
+        int rows = 5; // Number of rows in the pattern
+        
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j <= i; j++) {
+                // Alternate between 1 and 0 based on whether the sum of i and j is even or odd
+                System.out.print((i + j) % 2 == 0 ? "1" : "0");
+            }
+            System.out.println(); // Move to the next line after each row
+        }
+    }
+}
