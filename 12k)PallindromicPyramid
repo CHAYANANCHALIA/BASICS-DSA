@@ -1,0 +1,25 @@
+import java.util.*;
+public class PallindromicPyramid{
+    public static void p_p(int r){
+        for(int i = 1;i<=r;i++){
+           for (int s = 1;s<=r-i;s++){
+                System.out.print(" ");
+           } //spaces
+           for(int j = i;j>=1;j--){
+                System.out.print(j);//1st half
+                if(j==1){
+                    for(int k = 2 ;k<=i;k++){
+                         System.out.print(k);
+                    }//2nd half for
+                    
+                }//2nd half if
+           }//pattern 1st half and 2nd
+            System.out.println();
+        }//outer
+    }//user func
+   public static void main(String args[]){
+       Scanner sc = new Scanner(System.in);
+       int r = sc.nextInt();
+       p_p(r);
+   } //main
+}//class
