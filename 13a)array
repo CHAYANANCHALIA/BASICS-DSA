@@ -17,6 +17,7 @@ public class ARR{
         marks[1]=sc.nextInt();
         marks[2]=sc.nextInt();    
         System.out.print(marks[0]);
+       marks[2]=marks[2]+1;
          System.out.print(marks.length);
     }
 }
