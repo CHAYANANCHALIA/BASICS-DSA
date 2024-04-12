@@ -21,3 +21,21 @@ public class ARR{
          System.out.print(marks.length);
     }
 }
+=======================================
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class HelloWorld {
+    public static void Update(int marks[]){
+       for(int i = 0;i<marks.length;i++){
+           marks[i]+=1;
+           
+       } 
+    }
+    public static void main(String[] args) {
+    int marks[]={99,99,99};
+    Update(marks);
+     for(int i = 0;i<marks.length;i++){
+            System.out.print(marks[i]+ " ");}
+    }
+}
