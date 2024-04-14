@@ -39,3 +39,21 @@ class HelloWorld {
             System.out.print(marks[i]+ " ");}
     }
 }
+=============================================
+public class LinerSearch{
+    public static int LS(int key,int numbers[] ){
+        for(int i=0;i<numbers.length;i++){
+            if(numbers[i]==key){
+                return i;
+            }else return -1;
+        }
+    }
+    public static void main(String args[]){
+        int numbers[]={1,2,4,5,7,24,56};
+        int key = 7;
+        int index = LS(key,numbers);
+        if(index==-1){
+             System.out.print("key not found");
+        }else  System.out.print("key found at index" + index);
+    }
+}
