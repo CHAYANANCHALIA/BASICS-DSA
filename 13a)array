@@ -84,7 +84,7 @@ public class Largest{
     public static int getlargest(int num[]){
        int largest = Integer.MIN_VALUE;
        for(int i=0;i<num.length;i++ ){
-           if(largest<number[i]){
+           if(largest<num[i]){
                largest = num[i];
            }
        }
@@ -92,7 +92,7 @@ public class Largest{
     }//user func
     public static void main(String args[]){
         int num[] ={1,7,4,9,2,89,3,54};
-        int largest = largest(num);
+        int largest = getlargest(num);
          System.out.print(largest);
     }//main
 }//class
