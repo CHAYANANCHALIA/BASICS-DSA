@@ -78,3 +78,21 @@ public class LinerSearch{
         }else  System.out.print("key found at index " + index);
     }
 }
+==========================================================
+import java.util.*;
+public class Largest{
+    public static int getlargest(int num[]){
+       int largest = Integer.MIN_VALUE;
+       for(int i=0;i<num.length;i++ ){
+           if(largest<number[i]){
+               largest = num[i];
+           }
+       }
+       return largest;
+    }//user func
+    public static void main(String args[]){
+        int num[] ={1,7,4,9,2,89,3,54};
+        int largest = largest(num);
+         System.out.print(largest);
+    }//main
+}//class
