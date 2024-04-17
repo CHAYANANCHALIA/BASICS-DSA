@@ -115,3 +115,16 @@ public class Smallest{
          System.out.print(smallest);
     }//main
 }//class
+=================================================
+import java.util.*;
+public class BinarySearch{
+    public static int BS(int Num[],key){
+        int start = 0 ;int end = Num.length-1;
+        while(num)
+    }
+    public static void main(String args[]){
+        int Num[]={1,4,6,8,12,15,45,67,89};
+        int key = 15;
+         System.out.print("index for key is at "+BS(Num,key));
+    }
+}
