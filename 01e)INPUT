@@ -22,3 +22,11 @@ public class input{
        // System.out.print(FullName"B");//not possible
         }
 }
+================================================================================
+java string input issues=Google
+https://www.codeproject.com/Questions/1250676/Error-in-getting-user-input-JAVA
+https://forum.codewithmosh.com/t/issue-with-scanner-string-not-working/16360
+
+The ones i liked are below
+https://www.freecodecamp.org/news/java-scanner-nextline-call-gets-skipped-solved/
+https://dev.to/sbu_05/reading-an-string-after-an-integer-4jbp
