@@ -6,7 +6,7 @@ public class SumOfAB{
         int sum=a+b;/*Impressive programmers give logical variable names*/
         System.out.print(sum);
         System.out.println(a+b);
-        System.out.println(a=b);
+        System.out.println(a=b);   //You can perform operations in output/print statement
         System.out.println(a);
     }
 }
