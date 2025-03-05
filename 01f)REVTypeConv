@@ -26,3 +26,15 @@ public class revision{
 
     }
 }
+================================================================================================
+public class Main {
+    public static void main(String[] args) {
+        
+        char c = 97; // ASCII value of 'a' is 97
+        
+
+        System.out.println(c);
+    }
+}
+
+I thought this wouldnt work
